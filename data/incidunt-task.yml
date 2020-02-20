@@ -1,0 +1,29 @@
+taskName: quidem
+links:
+  deployment: https://odell.net
+  sourceCode: https://github.com/ut/suscipit
+framework:
+  library: et-voluptatum-doloremque
+  language: sed
+lab:
+  name: ab Lab
+  institution: Nienow - Zemlak
+  principalInvestigator: Dr. Amelia Abshire
+  developers:
+    - Martina Littel
+    - Everette Kassulke
+  website: https://stacy.org
+publication:
+  doi: doi:7b0517a7/a560.4e76
+  url: https://jarrett.com
+features:
+  electron: true
+  browser: true
+  docker: false
+  eegTrigger: true
+  mturk: false
+tags:
+  - aut
+  - eos
+  - laborum
+  - quis

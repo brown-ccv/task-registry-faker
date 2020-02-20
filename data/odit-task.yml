@@ -1,0 +1,29 @@
+taskName: et
+links:
+  deployment: http://jermey.org
+  sourceCode: https://github.com/sit/sint
+framework:
+  library: laborum-deleniti-ut
+  language: quisquam
+lab:
+  name: aut Lab
+  institution: Boyer, Hackett and Hagenes
+  principalInvestigator: Dr. Clotilde Corkery
+  developers:
+    - Lora Lindgren
+    - Ressie Lang
+  website: https://susan.net
+publication:
+  doi: doi:9a04f2e5/651b.4521
+  url: http://enrico.name
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: true
+  mturk: true
+tags:
+  - et
+  - consequatur
+  - facilis
+  - blanditiis

@@ -1,0 +1,29 @@
+taskName: et
+links:
+  deployment: http://hubert.name
+  sourceCode: https://github.com/consequatur/dolorem
+framework:
+  library: molestias-unde-et
+  language: vel
+lab:
+  name: quia Lab
+  institution: Gutmann LLC
+  principalInvestigator: Dr. Anika Lubowitz
+  developers:
+    - Jonathan Gleichner
+    - Kenna Weber
+  website: https://zack.net
+publication:
+  doi: doi:3d75a2e4/9ea3.4b82
+  url: https://erich.com
+features:
+  electron: true
+  browser: false
+  docker: false
+  eegTrigger: true
+  mturk: false
+tags:
+  - id
+  - non
+  - et
+  - explicabo

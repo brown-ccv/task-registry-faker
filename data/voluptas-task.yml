@@ -1,0 +1,29 @@
+taskName: tempora
+links:
+  deployment: https://terrence.info
+  sourceCode: https://github.com/autem/voluptatem
+framework:
+  library: incidunt-rem-atque
+  language: tenetur
+lab:
+  name: ipsum Lab
+  institution: Lang LLC
+  principalInvestigator: Dr. Irwin Mertz
+  developers:
+    - Horacio Romaguera
+    - Major O'Conner
+  website: http://estefania.biz
+publication:
+  doi: doi:9c0dffe0/43ad.497d
+  url: https://wade.com
+features:
+  electron: false
+  browser: true
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - est
+  - numquam
+  - assumenda
+  - rem

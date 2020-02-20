@@ -1,0 +1,29 @@
+taskName: qui
+links:
+  deployment: https://zaria.com
+  sourceCode: https://github.com/sed/iure
+framework:
+  library: est-quae-eaque
+  language: distinctio
+lab:
+  name: sed Lab
+  institution: Lebsack - Nitzsche
+  principalInvestigator: Dr. Chadrick Kemmer
+  developers:
+    - Moses Beatty
+    - Misty Effertz
+  website: http://kaley.com
+publication:
+  doi: doi:91b735b8/278d.47af
+  url: http://cleta.name
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - dolorum
+  - nemo
+  - quibusdam
+  - quod

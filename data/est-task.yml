@@ -1,0 +1,29 @@
+taskName: officiis
+links:
+  deployment: https://dixie.org
+  sourceCode: https://github.com/perferendis/dolor
+framework:
+  library: tempora-non-qui
+  language: eius
+lab:
+  name: sint Lab
+  institution: Kub - Skiles
+  principalInvestigator: Dr. Korbin Kohler
+  developers:
+    - Itzel Pagac
+    - Alessia Kihn
+  website: https://bobbie.org
+publication:
+  doi: doi:ce1172f6/9920.4200
+  url: https://brian.org
+features:
+  electron: true
+  browser: false
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - voluptate
+  - autem
+  - sed
+  - laborum

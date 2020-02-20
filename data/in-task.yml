@@ -1,0 +1,29 @@
+taskName: at
+links:
+  deployment: https://emil.org
+  sourceCode: https://github.com/quo/quia
+framework:
+  library: qui-ut-sit
+  language: et
+lab:
+  name: qui Lab
+  institution: Collier - Treutel
+  principalInvestigator: Dr. Maximillian Kertzmann
+  developers:
+    - Faye Jast
+    - Jimmy Green
+  website: http://schuyler.biz
+publication:
+  doi: doi:bf3394d8/4ebe.40da
+  url: http://otto.name
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: false
+  mturk: false
+tags:
+  - similique
+  - explicabo
+  - dolorem
+  - sint

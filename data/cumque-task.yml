@@ -1,0 +1,29 @@
+taskName: dignissimos
+links:
+  deployment: http://meaghan.org
+  sourceCode: https://github.com/placeat/sed
+framework:
+  library: dignissimos-dolor-quod
+  language: quaerat
+lab:
+  name: animi Lab
+  institution: Pfannerstill LLC
+  principalInvestigator: Dr. Sharon Kirlin
+  developers:
+    - Carmine Rogahn
+    - Delores King
+  website: http://rhoda.info
+publication:
+  doi: doi:2ebe360f/23fb.4fd7
+  url: https://ethelyn.info
+features:
+  electron: true
+  browser: true
+  docker: false
+  eegTrigger: false
+  mturk: false
+tags:
+  - dolorem
+  - velit
+  - repudiandae
+  - et

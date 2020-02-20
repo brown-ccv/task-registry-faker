@@ -1,0 +1,29 @@
+taskName: dicta
+links:
+  deployment: http://alena.info
+  sourceCode: https://github.com/placeat/tempore
+framework:
+  library: eum-assumenda-est
+  language: omnis
+lab:
+  name: tenetur Lab
+  institution: Rodriguez - Spinka
+  principalInvestigator: Dr. Kurtis Metz
+  developers:
+    - Felipe Barrows
+    - Stephon Wiegand
+  website: https://brando.org
+publication:
+  doi: doi:55b5134a/6af8.4977
+  url: https://haleigh.net
+features:
+  electron: false
+  browser: true
+  docker: true
+  eegTrigger: true
+  mturk: true
+tags:
+  - magni
+  - et
+  - qui
+  - enim

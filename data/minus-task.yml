@@ -1,0 +1,29 @@
+taskName: impedit
+links:
+  deployment: http://maverick.biz
+  sourceCode: https://github.com/aut/maiores
+framework:
+  library: et-fugit-quia
+  language: sit
+lab:
+  name: non Lab
+  institution: Stracke - Terry
+  principalInvestigator: Dr. Eddie Stokes
+  developers:
+    - Gladys Ritchie
+    - Sharon Gerhold
+  website: http://alexzander.name
+publication:
+  doi: doi:4a0fb7cc/96b7.4e26
+  url: http://matt.org
+features:
+  electron: false
+  browser: false
+  docker: false
+  eegTrigger: true
+  mturk: false
+tags:
+  - eaque
+  - illum
+  - amet
+  - dolorem

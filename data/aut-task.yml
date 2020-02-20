@@ -1,0 +1,29 @@
+taskName: odit
+links:
+  deployment: https://audreanne.biz
+  sourceCode: https://github.com/est/sunt
+framework:
+  library: qui-voluptas-minima
+  language: reprehenderit
+lab:
+  name: nesciunt Lab
+  institution: Franecki - Gleason
+  principalInvestigator: Dr. Asa Hintz
+  developers:
+    - Nelda Kris
+    - Gabe Labadie
+  website: http://dora.org
+publication:
+  doi: doi:812abd4c/23b4.4ff1
+  url: http://nathen.com
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - vero
+  - aspernatur
+  - nihil
+  - sed
