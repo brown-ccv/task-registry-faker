@@ -1,0 +1,37 @@
+taskName: vel
+links:
+  deployment: http://nellie.com
+  sourceCode: https://github.com/et/cumque
+framework:
+  library: ea-sapiente-nisi
+  language: hic
+lab:
+  name: voluptatem Lab
+  institution: Dooley - Wisozk
+  principalInvestigator: Dr. Seamus Pollich
+  developers:
+    - Jodie Luettgen
+    - Lucinda Waelchi
+  website: https://gideon.name
+publication:
+  doi: doi:81495b67/4bc9.4606
+  url: http://ward.name
+platform:
+  desktop:
+    windows: true
+    linux: false
+    mac: false
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: true
+  browser: true
+  docker: false
+  eegTrigger: true
+  mturk: false
+tags:
+  - et
+  - officiis
+  - in
+  - dolorem

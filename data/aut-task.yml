@@ -1,29 +1,37 @@
-taskName: odit
+taskName: esse
 links:
-  deployment: https://audreanne.biz
-  sourceCode: https://github.com/est/sunt
+  deployment: http://amelia.name
+  sourceCode: https://github.com/sequi/dolor
 framework:
-  library: qui-voluptas-minima
-  language: reprehenderit
+  library: laborum-nemo-sequi
+  language: repudiandae
 lab:
-  name: nesciunt Lab
-  institution: Franecki - Gleason
-  principalInvestigator: Dr. Asa Hintz
+  name: aperiam Lab
+  institution: Wolf - Runte
+  principalInvestigator: Dr. Tyshawn Macejkovic
   developers:
-    - Nelda Kris
-    - Gabe Labadie
-  website: http://dora.org
+    - Laurie Windler
+    - Verona Krajcik
+  website: https://dannie.biz
 publication:
-  doi: doi:812abd4c/23b4.4ff1
-  url: http://nathen.com
+  doi: doi:667208c0/1e05.42d9
+  url: https://roger.net
+platform:
+  desktop:
+    windows: false
+    linux: true
+    mac: false
+  mobile:
+    ios: false
+    android: true
 features:
-  electron: false
-  browser: false
+  electron: true
+  browser: true
   docker: true
-  eegTrigger: false
-  mturk: true
+  eegTrigger: true
+  mturk: false
 tags:
-  - vero
-  - aspernatur
-  - nihil
-  - sed
+  - est
+  - consectetur
+  - provident
+  - tempora

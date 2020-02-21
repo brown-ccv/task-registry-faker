@@ -1,0 +1,37 @@
+taskName: unde
+links:
+  deployment: http://earl.net
+  sourceCode: https://github.com/quo/quibusdam
+framework:
+  library: rerum-dolor-vero
+  language: accusamus
+lab:
+  name: iste Lab
+  institution: Yost - Miller
+  principalInvestigator: Dr. Sophia Ebert
+  developers:
+    - Jackson McKenzie
+    - Hanna Schaden
+  website: http://reed.com
+publication:
+  doi: doi:3aa65831/b40d.4fa0
+  url: https://morris.com
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: false
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: true
+  browser: true
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - cumque
+  - eum
+  - voluptas
+  - consequatur

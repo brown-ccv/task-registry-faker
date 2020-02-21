@@ -1,0 +1,37 @@
+taskName: vel
+links:
+  deployment: https://scot.org
+  sourceCode: https://github.com/atque/explicabo
+framework:
+  library: sunt-sed-sed
+  language: ab
+lab:
+  name: nesciunt Lab
+  institution: Johns - Rowe
+  principalInvestigator: Dr. Bernadine Stoltenberg
+  developers:
+    - Graciela Padberg
+    - Zaria Crona
+  website: https://fritz.biz
+publication:
+  doi: doi:c671a947/40f3.45f1
+  url: http://cortney.com
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: false
+  mobile:
+    ios: false
+    android: false
+features:
+  electron: false
+  browser: true
+  docker: true
+  eegTrigger: true
+  mturk: false
+tags:
+  - omnis
+  - pariatur
+  - nemo
+  - dolorum

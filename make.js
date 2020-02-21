@@ -60,6 +60,20 @@ const tags = () => {
   ];
 };
 
+const platform = () => {
+  return {
+    desktop: {
+      windows: faker.random.boolean(),
+      linux: faker.random.boolean(),
+      mac: faker.random.boolean()
+    },
+    mobile: {
+      ios: faker.random.boolean(),
+      android: faker.random.boolean()
+    }
+  };
+};
+
 const instance = () => {
   return {
     taskName: taskName(),
@@ -67,6 +81,7 @@ const instance = () => {
     framework: framework(),
     lab: lab(),
     publication: publication(),
+    platform: platform(),
     features: features(),
     tags: tags()
   };

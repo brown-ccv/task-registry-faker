@@ -1,0 +1,37 @@
+taskName: optio
+links:
+  deployment: http://lorna.net
+  sourceCode: https://github.com/laborum/sunt
+framework:
+  library: aliquid-animi-et
+  language: atque
+lab:
+  name: enim Lab
+  institution: Stanton - Hauck
+  principalInvestigator: Dr. Ransom Jacobi
+  developers:
+    - Armand Volkman
+    - Susie Zulauf
+  website: http://jacklyn.com
+publication:
+  doi: doi:e44d2533/02b5.44a2
+  url: https://rickey.info
+platform:
+  desktop:
+    windows: false
+    linux: false
+    mac: true
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: false
+  browser: false
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - iusto
+  - odit
+  - quisquam
+  - provident

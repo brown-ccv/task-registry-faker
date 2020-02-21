@@ -1,29 +1,37 @@
-taskName: impedit
+taskName: adipisci
 links:
-  deployment: http://maverick.biz
-  sourceCode: https://github.com/aut/maiores
+  deployment: http://elbert.org
+  sourceCode: https://github.com/aut/molestiae
 framework:
-  library: et-fugit-quia
-  language: sit
+  library: iste-recusandae-sint
+  language: cum
 lab:
-  name: non Lab
-  institution: Stracke - Terry
-  principalInvestigator: Dr. Eddie Stokes
+  name: molestiae Lab
+  institution: Bosco - Cormier
+  principalInvestigator: Dr. Claudie Schmitt
   developers:
-    - Gladys Ritchie
-    - Sharon Gerhold
-  website: http://alexzander.name
+    - Brionna Durgan
+    - Verla Casper
+  website: http://jena.org
 publication:
-  doi: doi:4a0fb7cc/96b7.4e26
-  url: http://matt.org
+  doi: doi:f9882cf1/bde0.4073
+  url: http://destiny.net
+platform:
+  desktop:
+    windows: false
+    linux: true
+    mac: false
+  mobile:
+    ios: false
+    android: false
 features:
   electron: false
   browser: false
-  docker: false
-  eegTrigger: true
+  docker: true
+  eegTrigger: false
   mturk: false
 tags:
-  - eaque
-  - illum
-  - amet
-  - dolorem
+  - nihil
+  - officiis
+  - veniam
+  - voluptatum

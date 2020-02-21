@@ -1,0 +1,37 @@
+taskName: ipsa
+links:
+  deployment: https://amely.info
+  sourceCode: https://github.com/et/rerum
+framework:
+  library: ratione-fugit-impedit
+  language: enim
+lab:
+  name: dolor Lab
+  institution: Wiza Group
+  principalInvestigator: Dr. Frieda Kreiger
+  developers:
+    - Neal Kilback
+    - Orland Toy
+  website: http://annamarie.net
+publication:
+  doi: doi:a0aa1666/8fda.412e
+  url: https://chelsie.info
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: false
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: true
+  mturk: false
+tags:
+  - ex
+  - minima
+  - et
+  - blanditiis
