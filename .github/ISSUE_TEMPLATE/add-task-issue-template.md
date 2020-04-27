@@ -1,14 +1,14 @@
 ---
 name: Add Task Issue Template
 about: Register new tasks to hub
-title: ''
+title: data-request
 labels: data request
 assignees: ''
 
 ---
 
 Instructions: 
-'''
+```
 taskName: # name of the task
 links: 
   deployment: https://example.com # link to the deployed site 
@@ -46,4 +46,4 @@ tags:
   - TAG_2
   - TAG_3
   - TAG_4
-'''
+```
