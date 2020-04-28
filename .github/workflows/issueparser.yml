@@ -1,9 +1,7 @@
 name: Add New Task
 
 on:
-  pull_request:
-    branches:
-      - master
+  issues: {types: opened}
 
 jobs:
   comment:
