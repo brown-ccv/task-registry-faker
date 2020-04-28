@@ -1,31 +1,26 @@
-function getChangeTypes(body) {
-  let changes = "|"
+const jsyaml = require('js-yaml');
+const fs = require('fs');
 
-  let bug = new RegExp('\[[xX]+\] :bug: Bug')
-  let feat = new RegExp('\[[xX]+\] :dragon: Feature')
-  let data = new RegExp('\[[xX]+\] :frog: Data ')
-  let content = new RegExp('\[[xX]+\] :dog: Content')
-  let other = new RegExp('\[[xX]+\] :blowfish: Other')
 
-	if (bug.test(body)) changes += "bug|"
-	if (feat.test(body)) changes += "feature|"
-	if (data.test(body)) changes += "data|"
-	if (content.test(body)) changes += "content|"
-	if (other.test(body)) changes += "other|"
-
-  return changes
+function addyml(issue) {
+  let start = issue.body.indexOf("```")+3
+  let end = issue.body.lastIndexOf("```")
+  var newtask = jsyaml.load(issue.body.substring(start, end));
+  let yamlStr = jsyaml.safeDump(newtask)
+  var taskname = newtask.taskname
+  fs.writeFileSync('data/'+taskname+'-task.yml',yamlStr,'utf8');
 }
 
 async function getIssueBody(octokit, repo, issue_number) {
-  const { data: comments } = await octokit.issues.get({
+  const { data: issue } = await octokit.issues.get({
     ...repo,
     issue_number
   });
-  return comments.body;
+  return issue;
 }
 
 
 module.exports = {
-	getChangeTypes,
+	addyml,
 	getIssueBody
 }
