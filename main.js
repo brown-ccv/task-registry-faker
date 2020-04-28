@@ -17,6 +17,7 @@ async function run() {
     const octokit = new GitHub(githubToken);
 
     const pr = await getIssueBody(octokit, repo, number)
+    console.log(pr)
     const changeTypes = getChangeTypes(pr)
     core.setOutput('change_types', changeTypes)
 
