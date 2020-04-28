@@ -14,8 +14,12 @@ links:
   deployment: https://example.com # link to the deployed site 
   sourceCode: https://github.com/example/task # link to the source code of task.
 framework:
-  library: LIBRARY
-  language: LANGUAGE
+  library: 
+    - LIBRARY_1
+    - LIBRARY_2
+  language: 
+    - LANGUAGE_1
+    - LANGUAGE_2
 lab:
   name: # name of the lab
   institution: # institution name
