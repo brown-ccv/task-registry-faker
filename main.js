@@ -4,8 +4,9 @@ const { getIssueBody, getChangeTypes } = require("./comments");
 
 async function run() {
   try {
-    const repo = context.repo;
-    const number = context.issue.number;
+    const repo = context.repo
+    const params = context.issue;
+    const number = params.number;
     const githubToken = core.getInput("GITHUB_TOKEN", {required: true});
 
     if (!number) {
