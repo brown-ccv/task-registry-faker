@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const { context, GitHub } = require('@actions/github');
-const { getIssueBody, getChangeTypes } = require("./comments");
+const { getIssueBody, addyml } = require("./comments");
 
 async function run() {
   try {
@@ -16,9 +16,12 @@ async function run() {
 
     const octokit = new GitHub(githubToken);
 
-    const pr = await getIssueBody(octokit, repo, number)
-    const changeTypes = getChangeTypes(pr)
-    core.setOutput('change_types', changeTypes)
+    const issue = await getIssueBody(octokit, repo, number)
+    const label = issue.labels[0].name
+    if(label === 'data request'){
+      addyml(issue)
+    }
+    // core.setOutput('change_types', changeTypes)
 
   } catch ({ message }) {
     core.setFailed(message);
