@@ -7,41 +7,43 @@ assignees: ''
 
 ---
 
-Instructions: 
-```
-taskName: # name of the task
+Instructions: Fill in the below yml template as per the specification in the comments.
+```yml
+taskName: # [String, required]
 links: 
-  deployment: https://example.com # link to the deployed site 
-  sourceCode: https://github.com/example/task # link to the source code of task.
+  deployment: https://example.com # [String::URL, optional]
+  sourceCode: https://github.com/example/task # [String::URL, required]
+  publication: https://example.com # [String::URL, optional]
 framework:
-  library: LIBRARY
-  language: LANGUAGE
+  library: # [Array::String, optional]
+    - LIBRARY_1 
+    - LIBRARY_2
+  language: # [Array::String, optional]
+    - LANGUAGE_1
+    - LANGUAGE_2
 lab:
-  name: # name of the lab
-  institution: # institution name
-  principalInvestigator: 
-  developers:
+  name: # [String, required]
+  institution: # [String, required]
+  principalInvestigator: # [String, optional]
+  developers: # [Array::String, optional]
     - DEVELOPER_1
     - DEVELOPER_2
   website: https://example.com
-publication:
-  doi: doi:###/###.###
-  url: https://example.com
-platform:
+platform: # [Boolean, optional]
   desktop:
-    windows: true
-    linux: true
+    windows: false
+    linux: false
     mac: false
   mobile:
     ios: false
     android: false
-features:
+features: # [Boolean, optional]
   electron: false
-  browser: true
+  browser: false
   docker: false
-  eegTrigger: true
-  mturk: true
-tags:
+  eegTrigger: false
+  mturk: false
+tags: # [Array::String, optional]
   - TAG_1
   - TAG_2
   - TAG_3
