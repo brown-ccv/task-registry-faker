@@ -1,7 +1,8 @@
 name: Add New Task
 
 on:
-  issues: {types: opened}
+  issues:
+    types: [opened, reopened, labeled, edited]
 
 jobs:
   comment:
