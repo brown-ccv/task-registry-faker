@@ -5,21 +5,13 @@
   "main": "make.js",
   "scripts": {
     "make": "node make.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "ncc build %npm_package_main% -o dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Fernando Gelin",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1",
     "faker": "^4.1.0",
-    "fs": "0.0.1-security",
-    "js-yaml": "^3.13.1",
     "yaml": "^1.7.2"
-  },
-  "devDependencies": {
-    "@zeit/ncc": "^0.22.1"
   }
 }
