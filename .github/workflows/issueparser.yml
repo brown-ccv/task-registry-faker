@@ -32,6 +32,7 @@ jobs:
       with:
         message: "We have started a PR for this issue"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Issue Commenter on failure
       if: ${{ failure() }}
       uses: ben-z/actions-comment-on-issue@1.0.2
       with:
