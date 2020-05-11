@@ -18,7 +18,7 @@ jobs:
   issue-jobs:
     if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
-    
+
     needs: build  
     steps:
     - name: Parse Task Issue
@@ -31,4 +31,9 @@ jobs:
       uses: ben-z/actions-comment-on-issue@1.0.2
       with:
         message: "We have started a PR for this issue"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: ${{ failure() }}
+      uses: ben-z/actions-comment-on-issue@1.0.2
+      with:
+        message: "This issue has failed"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
