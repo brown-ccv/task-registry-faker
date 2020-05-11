@@ -39,7 +39,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Check the output from issue parser
       if: ${{ success() }}
-      run: echo "${{steps.issue_parser.outputs.file_content}} ${{steps.issue_parser.outputs.file_name}}"
+      run: echo "${{steps.issue_parser.outputs.file_name}}"
     # - name: Create file
     #   if: ${{ success() }}
     #   uses: finnp/create-file-action@master
