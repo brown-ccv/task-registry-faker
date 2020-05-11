@@ -37,10 +37,13 @@ jobs:
       with:
         message: "This issue has failed"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Create file
+    - name: Check the output from issue parser
       if: ${{ success() }}
-      uses: finnp/create-file-action@master
-      env:
-        FILE_NAME: ${{steps.issue_parser.outputs.file_name}}
-        FILE_DATA: ${{steps.issue_parser.outputs.file_content}}
+      run: echo "${{steps.issue_parser.outputs.file_name}}"
+    # - name: Create file
+    #   if: ${{ success() }}
+    #   uses: finnp/create-file-action@master
+    #   env:
+    #     FILE_NAME: ${{steps.issue_parser.outputs.file_name}}
+    #     FILE_DATA: ${{steps.issue_parser.outputs.file_content}}
     
