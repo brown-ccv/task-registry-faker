@@ -49,5 +49,5 @@ jobs:
     - name: Create file
       uses: finnp/create-file-action@master
       env:
-        FILE_NAME: "example.yml" #${{needs.issue-jobs.outputs.file_name}}
+        FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
         FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
