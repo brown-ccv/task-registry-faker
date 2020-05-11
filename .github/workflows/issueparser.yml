@@ -18,9 +18,6 @@ jobs:
   issue-jobs:
     if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
-    outputs:
-      file_content: ${{ steps.issue_parser.outputs.file_content }}
-      file_name: ${{ steps.issue_parser.outputs.file_name }}
     needs: build  
     steps:
     - name: Parse Task Issue
@@ -40,14 +37,10 @@ jobs:
       with:
         message: "This issue has failed"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  pr-creation:
-    if: contains(github.event.issue.labels.*.name, 'data request')
-    runs-on: ubuntu-latest
-
-    needs: issue-jobs
-    steps:
     - name: Create file
+      if: ${{ success() }}
       uses: finnp/create-file-action@master
       env:
-        FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
-        FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
+        FILE_NAME: ${{steps.issue_parser.outputs.file_name}}
+        FILE_DATA: ${{steps.issue_parser.outputs.file_content}}
+    
