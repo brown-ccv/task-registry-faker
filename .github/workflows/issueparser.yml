@@ -43,14 +43,13 @@ jobs:
   pr-creation:
     if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./data
+
     needs: issue-jobs
     steps:
     - uses: actions/checkout@v2
     - name: Create file
-      uses: finnp/create-file-action@master
+      working-directory: ./data
+      runs: echo ${{env.FILE_DATA}} > "${{env.FILE_NAME}}"
       env:
         FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
         FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
