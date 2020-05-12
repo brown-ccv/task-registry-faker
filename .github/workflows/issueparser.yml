@@ -51,3 +51,6 @@ jobs:
       env:
         FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
         FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
+    - name: Stage changes
+      run: |
+        git add .
