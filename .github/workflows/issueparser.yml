@@ -43,7 +43,9 @@ jobs:
   pr-creation:
     if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./data
     needs: issue-jobs
     steps:
     - uses: actions/checkout@v2
