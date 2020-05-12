@@ -1,14 +1,19 @@
 ---
-name: Add Task Template
-about: Register new tasks to hub
+name: Update Task
+about: Describe this issue template's purpose here.
 title: ''
-labels: data request
+labels: update data
 assignees: ''
 
 ---
 
-**Instructions**
-Fill in the below yml template as per the specification in the comments.
+**Which task is being updated**
+Task name here.
+
+**Which items are being updated in the task?**
+item_name: value
+
+***Refer to the YML template below***
 ```yml
 taskName: # [String, required]
 links: 
