@@ -2,7 +2,7 @@ name: Add New Task
 
 on:
   issues:
-    types: [opened, reopened, edited]
+    types: [opened, reopened]
 
 jobs:
   build:
@@ -55,7 +55,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Create file
       working-directory: ./data
-      run: echo "${{env.FILE_DATA}}" > ${{env.FILE_NAME}}
+      run: echo "${{env.FILE_DATA}}" > ${{env.FILE_NAME}} + ".yml"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
       with:
@@ -64,6 +64,7 @@ jobs:
         title: 'Register ${{env.TASK_NAME}}'
         body: |
             Closes #${{env.ISSUE_NUMBER}}
+        branch: create-pull-request/${{env.FILE_NAME}}
     - name: Issue Commenter on success
       if: ${{ success() }}
       uses: ben-z/actions-comment-on-issue@1.0.2
