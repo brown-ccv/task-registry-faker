@@ -1,11 +1,12 @@
 name: Add New Task
 
 on:
-  issues: {types: opened}
+  issues:
+    types: [opened, reopened, edited]
 
 jobs:
-  comment:
-    if: github.event.label.name == 'data request'
+  build:
+    if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
 
     steps:
@@ -14,13 +15,20 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+  issue-jobs:
+    if: contains(github.event.issue.labels.*.name, 'data request')
+    runs-on: ubuntu-latest
+    outputs:
+      issue_number: ${{ steps.issue_parser.outputs.issue_number }}
+      task_name: ${{ steps.issue_parser.outputs.task_name }}
+      file_content: ${{ steps.issue_parser.outputs.file_content }}
+      file_name: ${{ steps.issue_parser.outputs.file_name }}
+    needs: build  
+    steps:
     - name: Parse Task Issue
       id: issue_parser
       uses: brown-ccv/gh-actions/parse-task-issue@parse-task-issue
       with:
-<<<<<<< Updated upstream
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Issue Commenter on success
       if: ${{ success() }}
@@ -37,18 +45,25 @@ jobs:
   pr-creation:
     if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
-
+    env:
+      ISSUE_NUMBER: ${{needs.issue-jobs.outputs.issue_number}}
+      TASK_NAME: ${{needs.issue-jobs.outputs.task_name}}
+      FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
+      FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
     needs: issue-jobs
     steps:
     - uses: actions/checkout@v2
     - name: Create file
       working-directory: ./data
       run: echo "${{env.FILE_DATA}}" > ${{env.FILE_NAME}}
-      env:
-        FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
-        FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: add ${{env.FILE_NAME}}
+        title: 'Register ${{env.TASK_NAME}}'
+        body: |
+            Closes #${{env.ISSUE_NUMBER}}
     - name: Issue Commenter on success
       if: ${{ success() }}
       uses: ben-z/actions-comment-on-issue@1.0.2
@@ -62,4 +77,3 @@ jobs:
         message: "PR creation failed"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
->>>>>>> Stashed changes
