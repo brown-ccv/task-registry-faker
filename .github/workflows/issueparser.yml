@@ -1,11 +1,12 @@
 name: Add New Task
 
 on:
-  issues: {types: opened}
+  issues:
+    types: [opened, reopened, labeled, edited]
 
 jobs:
-  comment:
-    if: github.event.label.name == 'data request'
+  build:
+    if: contains(github.event.issue.labels.*.name, 'data request')
     runs-on: ubuntu-latest
 
     steps:
@@ -14,13 +15,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+  issue-jobs:
+    if: contains(github.event.issue.labels.*.name, 'data request')
+    runs-on: ubuntu-latest
+    outputs:
+      file_content: ${{ steps.issue_parser.outputs.file_content }}
+      file_name: ${{ steps.issue_parser.outputs.file_name }}
+    needs: build  
+    steps:
     - name: Parse Task Issue
       id: issue_parser
       uses: brown-ccv/gh-actions/parse-task-issue@parse-task-issue
       with:
-<<<<<<< Updated upstream
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Issue Commenter on success
       if: ${{ success() }}
@@ -61,5 +67,3 @@ jobs:
       with:
         message: "PR creation failed"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
->>>>>>> Stashed changes
