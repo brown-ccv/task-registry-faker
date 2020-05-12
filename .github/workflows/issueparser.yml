@@ -46,11 +46,11 @@ jobs:
 
     needs: issue-jobs
     steps:
+    - uses: actions/checkout@v2
     - name: Create file
       uses: finnp/create-file-action@master
       env:
         FILE_NAME: ${{needs.issue-jobs.outputs.file_name}}
         FILE_DATA: ${{needs.issue-jobs.outputs.file_content}}
-    - uses: actions/checkout@v2
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
