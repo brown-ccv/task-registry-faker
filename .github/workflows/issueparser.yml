@@ -30,17 +30,12 @@ jobs:
       uses: brown-ccv/gh-actions/parse-task-issue@parse-task-issue
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Issue Commenter on success
-      if: ${{ success() }}
-      uses: ben-z/actions-comment-on-issue@1.0.2
-      with:
-        message: "We have started a PR for this issue"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Issue Commenter on failure
       if: ${{ failure() }}
       uses: ben-z/actions-comment-on-issue@1.0.2
       with:
-        message: "This issue has failed"
+        message: "This issue has failed. The YML file contents have not been filled properly (either the default text for the fields 
+        is present or the required fields are missing)."
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   pr-creation:
     if: contains(github.event.issue.labels.*.name, 'data request')
@@ -57,19 +52,25 @@ jobs:
       working-directory: ./data
       run: echo "${{env.FILE_DATA}}" > '${{env.FILE_NAME}}.yml'
     - name: Create Pull Request
+      id: cpr
       uses: peter-evans/create-pull-request@v2
       with:
+        committer: GitHub <noreply@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: add ${{env.FILE_NAME}}
         title: 'Register ${{env.TASK_NAME}}'
         body: |
             Closes #${{env.ISSUE_NUMBER}}
         branch: create-pull-request/${{env.FILE_NAME}}
+        labels: register task, automated pr
+        assignees: fernandogelin, mcmcgrath13
     - name: Issue Commenter on success
       if: ${{ success() }}
       uses: ben-z/actions-comment-on-issue@1.0.2
       with:
-        message: "We have created a PR for this issue"
+        message: "We have created a PR for this issue - #${{ steps.cpr.outputs.pull-request-number }}. The YML file for the task data will be 
+        entered into the data folder when the pull request is merged."
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Issue Commenter on failure
       if: ${{ failure() }}
