@@ -1,0 +1,37 @@
+taskName: voluptatem
+links:
+  deployment: https://stevie.net
+  sourceCode: https://github.com/nulla/eum
+framework:
+  library: reiciendis-qui-nostrum
+  language: omnis
+lab:
+  name: rerum Lab
+  institution: Dietrich and Sons
+  principalInvestigator: Dr. Brian Dooley
+  developers:
+    - Cleo Hintz
+    - Nicklaus Pacocha
+  website: https://brannon.org
+publication:
+  doi: doi:2511344a/070a.4124
+  url: http://macy.org
+platform:
+  desktop:
+    windows: true
+    linux: false
+    mac: false
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: true
+  browser: true
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - dicta
+  - eum
+  - quo
+  - nam

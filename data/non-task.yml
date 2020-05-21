@@ -1,0 +1,37 @@
+taskName: fuga
+links:
+  deployment: https://gerard.name
+  sourceCode: https://github.com/accusamus/repudiandae
+framework:
+  library: et-quidem-voluptatem
+  language: cum
+lab:
+  name: sit Lab
+  institution: Wiegand Inc
+  principalInvestigator: Dr. Gaylord Wintheiser
+  developers:
+    - Lea Hansen
+    - Abdul Kunze
+  website: https://christopher.com
+publication:
+  doi: doi:94eaacb3/60cf.42cf
+  url: http://kenneth.net
+platform:
+  desktop:
+    windows: false
+    linux: true
+    mac: false
+  mobile:
+    ios: true
+    android: false
+features:
+  electron: true
+  browser: true
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - quam
+  - dolores
+  - corporis
+  - ipsa

@@ -1,0 +1,37 @@
+taskName: possimus
+links:
+  deployment: https://electa.biz
+  sourceCode: https://github.com/laboriosam/excepturi
+framework:
+  library: alias-qui-neque
+  language: vel
+lab:
+  name: exercitationem Lab
+  institution: Grady, Lebsack and Watsica
+  principalInvestigator: Dr. Terrence Nader
+  developers:
+    - Luigi Rosenbaum
+    - Monica Toy
+  website: https://sheila.com
+publication:
+  doi: doi:4525080f/d206.44a7
+  url: https://erin.org
+platform:
+  desktop:
+    windows: false
+    linux: true
+    mac: true
+  mobile:
+    ios: true
+    android: false
+features:
+  electron: false
+  browser: true
+  docker: false
+  eegTrigger: false
+  mturk: false
+tags:
+  - pariatur
+  - in
+  - vel
+  - accusantium

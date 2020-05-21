@@ -1,0 +1,37 @@
+taskName: nostrum
+links:
+  deployment: https://karen.name
+  sourceCode: https://github.com/repudiandae/eum
+framework:
+  library: repellendus-expedita-asperiores
+  language: tenetur
+lab:
+  name: fugit Lab
+  institution: Baumbach - Leffler
+  principalInvestigator: Dr. Jerrod Hermiston
+  developers:
+    - Gwendolyn Rutherford
+    - Constance Ruecker
+  website: http://akeem.net
+publication:
+  doi: doi:bdc76eef/18f8.479c
+  url: https://karelle.biz
+platform:
+  desktop:
+    windows: false
+    linux: false
+    mac: false
+  mobile:
+    ios: true
+    android: false
+features:
+  electron: true
+  browser: true
+  docker: true
+  eegTrigger: false
+  mturk: false
+tags:
+  - corrupti
+  - maxime
+  - amet
+  - eum

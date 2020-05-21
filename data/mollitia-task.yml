@@ -1,0 +1,37 @@
+taskName: ducimus
+links:
+  deployment: https://rusty.org
+  sourceCode: https://github.com/et/illo
+framework:
+  library: magni-optio-molestiae
+  language: perspiciatis
+lab:
+  name: omnis Lab
+  institution: Fahey and Sons
+  principalInvestigator: Dr. Jeremie Hartmann
+  developers:
+    - Kirsten Dickens
+    - Cristopher Lynch
+  website: https://cory.org
+publication:
+  doi: doi:3809cf8b/1ee4.4842
+  url: https://mellie.biz
+platform:
+  desktop:
+    windows: true
+    linux: false
+    mac: true
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: true
+  browser: true
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - recusandae
+  - error
+  - sed
+  - consequatur

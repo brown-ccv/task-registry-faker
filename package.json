@@ -1,13 +1,14 @@
 {
-  "name": "task-registry-data",
+  "name": "task-registry-faker",
   "version": "1.0.0",
   "description": "",
-  "main": "",
+  "main": "make.js",
   "scripts": {
+    "make": "node make.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Rashi Dhar",
+  "author": "Fernando Gelin",
   "license": "MIT",
   "dependencies": {
     "faker": "^4.1.0",

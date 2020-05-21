@@ -1,0 +1,37 @@
+taskName: et
+links:
+  deployment: http://lila.com
+  sourceCode: https://github.com/rem/quia
+framework:
+  library: rerum-corrupti-aut
+  language: molestiae
+lab:
+  name: doloribus Lab
+  institution: Barton - Gusikowski
+  principalInvestigator: Dr. Frederick DuBuque
+  developers:
+    - Malika Lakin
+    - Greyson Roob
+  website: http://ciara.net
+publication:
+  doi: doi:5ca9aff1/0f11.4fed
+  url: https://molly.biz
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: true
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: false
+  browser: false
+  docker: false
+  eegTrigger: false
+  mturk: false
+tags:
+  - aspernatur
+  - assumenda
+  - at
+  - beatae

@@ -1,0 +1,38 @@
+taskName: numquam
+links:
+  deployment: https://sharon.name
+  sourceCode: https://github.com/ea/aut
+framework:
+  library: distinctio-et-odit
+  language: sit
+lab:
+  name: adipisci Lab
+  institution: Frami, Kuvalis and Kerluke
+  principalInvestigator: Dr. Nigel Macejkovic
+  developers:
+    - Michele Corwin
+    - Jo Lubowitz
+  website: https://jordi.org
+publication:
+  doi: doi:1f8c99a4/eb71.4a93
+  url: https://aniya.biz
+platform:
+  desktop:
+    windows: false
+    linux: false
+    mac: false
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: true
+  browser: true
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - consequatur
+  - repellat
+  - quo
+  - unde
+erum

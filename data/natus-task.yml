@@ -1,0 +1,37 @@
+taskName: tempore
+links:
+  deployment: http://rose.net
+  sourceCode: https://github.com/earum/sapiente
+framework:
+  library: maiores-voluptatem-molestiae
+  language: atque
+lab:
+  name: non Lab
+  institution: Waters, Champlin and Breitenberg
+  principalInvestigator: Dr. Alaina Flatley
+  developers:
+    - Rashad Olson
+    - Dejuan Schinner
+  website: https://sherwood.info
+publication:
+  doi: doi:757b9f39/b2d6.45c7
+  url: http://wilhelmine.org
+platform:
+  desktop:
+    windows: false
+    linux: false
+    mac: true
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: false
+  browser: false
+  docker: true
+  eegTrigger: true
+  mturk: true
+tags:
+  - dolorem
+  - commodi
+  - explicabo
+  - vel

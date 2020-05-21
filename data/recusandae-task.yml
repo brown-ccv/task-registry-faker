@@ -1,0 +1,37 @@
+taskName: impedit
+links:
+  deployment: https://sophia.name
+  sourceCode: https://github.com/aliquam/et
+framework:
+  library: illo-nostrum-nulla
+  language: animi
+lab:
+  name: omnis Lab
+  institution: Dicki - Hand
+  principalInvestigator: Dr. Osbaldo Simonis
+  developers:
+    - Margaretta Fritsch
+    - Jennie Stamm
+  website: https://kristoffer.name
+publication:
+  doi: doi:f0d2fa6e/32e5.4eb9
+  url: https://brielle.biz
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: true
+  mobile:
+    ios: false
+    android: true
+features:
+  electron: true
+  browser: false
+  docker: false
+  eegTrigger: false
+  mturk: true
+tags:
+  - est
+  - in
+  - et
+  - ipsam

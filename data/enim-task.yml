@@ -1,0 +1,37 @@
+taskName: dolor
+links:
+  deployment: https://neoma.com
+  sourceCode: https://github.com/beatae/autem
+framework:
+  library: placeat-est-at
+  language: tempore
+lab:
+  name: sed Lab
+  institution: Weissnat - Schaden
+  principalInvestigator: Dr. Herminia Beahan
+  developers:
+    - Alayna Boyer
+    - Emmanuelle Carroll
+  website: http://johathan.net
+publication:
+  doi: doi:1324b503/6110.4989
+  url: http://cortez.org
+platform:
+  desktop:
+    windows: true
+    linux: true
+    mac: false
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: true
+  browser: false
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - necessitatibus
+  - qui
+  - porro
+  - non

@@ -1,0 +1,37 @@
+taskName: ullam
+links:
+  deployment: https://carmine.biz
+  sourceCode: https://github.com/distinctio/ut
+framework:
+  library: inventore-ea-neque
+  language: in
+lab:
+  name: quo Lab
+  institution: Donnelly - Mraz
+  principalInvestigator: Dr. Lillie Marquardt
+  developers:
+    - Corene Rutherford
+    - Francisco Ward
+  website: http://taurean.name
+publication:
+  doi: doi:7cf388fe/a7ba.48cc
+  url: http://austyn.net
+platform:
+  desktop:
+    windows: false
+    linux: false
+    mac: true
+  mobile:
+    ios: true
+    android: true
+features:
+  electron: true
+  browser: false
+  docker: false
+  eegTrigger: false
+  mturk: false
+tags:
+  - quaerat
+  - voluptatem
+  - enim
+  - aliquid

@@ -1,0 +1,37 @@
+taskName: similique
+links:
+  deployment: https://zechariah.info
+  sourceCode: https://github.com/tempore/sunt
+framework:
+  library: exercitationem-sint-harum
+  language: commodi
+lab:
+  name: consequatur Lab
+  institution: Waelchi - Parisian
+  principalInvestigator: Dr. Hannah Stracke
+  developers:
+    - Jose Kertzmann
+    - Karson Turner
+  website: https://eldridge.biz
+publication:
+  doi: doi:b5021325/ba28.40e1
+  url: http://stewart.com
+platform:
+  desktop:
+    windows: false
+    linux: true
+    mac: true
+  mobile:
+    ios: false
+    android: false
+features:
+  electron: true
+  browser: true
+  docker: true
+  eegTrigger: false
+  mturk: true
+tags:
+  - error
+  - qui
+  - nobis
+  - assumenda
